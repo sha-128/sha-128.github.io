@@ -215,7 +215,7 @@ header h1{
 }
 .main-description p{
     text-align: center;
-    line-height: 3rem;
+    line-height: 1.2em;
     font-size: var(--text-fineprint);
 }
 
@@ -311,7 +311,13 @@ footer h1{
 
 }
 
-@media only screen and (max-width: 784px){
+@media only screen and (max-width: 1440px){
+    .springstudies-watermark-h1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
     :root{
         /* --bg-primary-color : #5e0404; */
 
@@ -322,10 +328,9 @@ footer h1{
         --text-fineprint: 1.6rem;
         --text-small : 1.2rem;
         --line-height-main-heading : 7.2rem;
+        --main-height : 80rem;
     }
-    .springstudies-watermark-h1{
-        display: none;
-    }
+    
 }
 
 @media only screen and (max-width: 600px){
@@ -338,5 +343,6 @@ footer h1{
         --text-fineprint: 1.4rem;
         --text-small : 1.2rem;
         --line-height-main-heading : 5.2rem;
+        --main-height : 70rem;
     }
 }
