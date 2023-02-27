@@ -90,8 +90,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ------------------------------------- Main ------------------------- */
 #background-main-body--{
-    background: var(--bg-primary-color);
-    position: absolute;
+    /* background: var(--bg-primary-color); */
+    /* position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,9 +99,26 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
     height: 100%;
     z-index: -10;
-    /* height: auto; */
-    /* border: 2px solid red; */
-    min-height: var(--main-height);
+    min-height: var(--main-height); */
+
+}
+#background-main-body--{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: var(--bg-primary-color);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+  
+.body-particles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 main.main{
@@ -110,8 +127,8 @@ main.main{
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
-    /* min-height: 10rem; */
     min-height: var(--main-height);
+    height: 100vh;
 }
 /* ----------------------------------- Header ------------------------------- */
 header{
@@ -173,7 +190,7 @@ header h1{
     justify-content: space-between;
     gap: 1rem;
     /* margin-top: 3rem; */
-    margin-bottom: 5rem;
+    margin-bottom: 2em;
     /* width: 100%; */
 }
 .button-nav{
@@ -249,9 +266,6 @@ footer h1{
 
 
 
-/* .springstudies-watermark{
-    border: 2px solid red;
-} */
 
 .springstudies-watermark-h1{
     color: #192a3129;
@@ -259,7 +273,7 @@ footer h1{
     position: absolute;
     bottom: 0;
     right: 0;
-    /* transform: translateY(25%); */
+    transform: translateY(30%);
     cursor: default;
 
 
@@ -317,7 +331,7 @@ footer h1{
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1440px){
     :root{
         /* --bg-primary-color : #5e0404; */
 
@@ -343,6 +357,41 @@ footer h1{
         --text-fineprint: 1.4rem;
         --text-small : 1.2rem;
         --line-height-main-heading : 5.2rem;
-        --main-height : 70rem;
+        --main-height : 75rem;
+    }
+    .nav-buttons{
+        transform: translateY(-50%);
+    }
+
+
+    .star-img--random-ab1{
+        width: 1rem;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+    .star-img--random-ab2{
+        width: 1.5rem;
+        position: absolute;
+        top: 70%;
+        left: 25%;
+    }
+    .star-img--random-ab3{
+        width: 3rem;
+        position: absolute;
+        top: 60%;
+        right: 25%;
+    }
+    .star-img--random-ab4{
+        width: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+    .star-img--random-ab5{
+        width: 1rem;
+        position: absolute;
+        top: 70%;
+        right: 20%;
     }
 }
