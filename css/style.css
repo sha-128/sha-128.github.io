@@ -18,6 +18,7 @@
     --text-small : 1.6rem;
     --line-height-main-heading : 8.8rem;
     --main-height : 98rem;
+    --text-very-small: 1.2rem;
 
 }
 html {
@@ -108,7 +109,7 @@ main.main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* min-height: 10rem; */
     min-height: var(--main-height);
 }
@@ -116,7 +117,7 @@ main.main{
 header{
     /* border: 2px solid blue; */
     border-radius: 5rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5em 2em;
     margin-top: 1.6rem;
 
     background: linear-gradient(23.96deg, #76C38F 0%, #60CF8C 48.44%, #A7C12C 100%);
@@ -125,8 +126,9 @@ header{
     -moz-box-shadow: 0px 0px 61px 0px rgba(204,204,204,0.71);
 }
 header h1{
-    --text-small : 1.4rem;
-    font-size: var(--text-small);
+    /* --text-small : 1.4rem; */
+    font-size: var(--text-very-small);
+    text-align: center;
 }
 
 
@@ -220,7 +222,7 @@ header h1{
 /* -------------------------------- Footer -------------------------------- */
 footer{
     border-radius: 5rem;
-    padding: 1rem 3rem;
+    padding: 1rem 3em;
     margin-bottom: 2rem;
 
     background-color: rgba(70, 70, 70, 0.43);
@@ -239,6 +241,7 @@ footer:hover{
 footer h1{
     color: #d2dae4;
     font-size: var(--text-small);
+    text-align: center;
 }
 
 
@@ -299,9 +302,13 @@ footer h1{
 
 
 @media only screen and (min-width: 1440px) and (min-height: 900px){
+    :root{
+        --main-height : 100vh;
+    }
     html{
         overflow: hidden;
     }
+
 }
 
 @media only screen and (max-width: 784px){
