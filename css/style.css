@@ -236,6 +236,12 @@ header h1{
     font-size: var(--text-fineprint);
 }
 
+.launching-soon-text{
+    font-size: calc(var(--text-fineprint) + 2px);
+    font-weight: 700;
+    color: #60CF8C;
+}
+
 /* -------------------------------- Footer -------------------------------- */
 footer{
     border-radius: 5rem;
